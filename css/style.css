@@ -1,0 +1,109 @@
+/* === TRUE FULL BLUE THEME === */
+/* Adjust this if your PDF uses a different shade: */
+:root {
+  --blue-main: #0b5cff;     /* MAIN PAGE BLUE */
+  --blue-light: #3c7dff;    /* for accents if needed */
+  --text-on-blue: #ffffff;  /* white text */
+  --card-bg: #ffffff;       /* white cards */
+  --card-text: #0b1b40;     /* dark text on cards */
+  --brand-font: 'Inter', sans-serif;
+}
+
+/* Make the entire page blue */
+body {
+  background: var(--blue-main) !important;
+  color: var(--text-on-blue);
+  font-family: var(--brand-font);
+}
+
+/* HEADER matches the full-page theme */
+.site-header.navbar {
+  background: var(--blue-main) !important;
+  border-bottom: 1px solid rgba(255,255,255,0.25);
+}
+
+/* NAV LINKS */
+.nav-link {
+  color: var(--text-on-blue) !important;
+}
+.nav-link:hover,
+.nav-link:focus {
+  text-decoration: underline;
+}
+
+/* HERO SECTION text on blue */
+h1, h2, h3, p, a, small {
+  color: var(--text-on-blue);
+}
+
+/* BUTTONS */
+.btn-primary {
+  background: #ffffff !important;
+  color: var(--blue-main) !important;
+  border: none !important;
+}
+.btn-primary:hover {
+  background: #dce6ff !important;
+  color: var(--blue-main) !important;
+}
+
+.btn-outline-secondary {
+  border: 2px solid #ffffff !important;
+  color: #ffffff !important;
+}
+.btn-outline-secondary:hover {
+  background: #ffffff !important;
+  color: var(--blue-main) !important;
+}
+
+/* CARDS — white floating panels */
+.card {
+  background: var(--card-bg);
+  color: var(--card-text);
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Book a slot / contact form text stays white */
+label, input, textarea {
+  color: var(--card-text);  /* inputs remain dark on white */
+}
+
+/* FOOTER */
+footer {
+  background: var(--blue-main) !important;
+  color: #ffffff !important;
+  border-top: 1px solid rgba(255,255,255,0.25);
+}
+
+/* LINKS IN FOOTER */
+footer a {
+  color: #ffffff !important;
+}
+
+/* SKIP LINK */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #ffffff;
+  color: var(--blue-main);
+  padding: .5rem 1rem;
+  z-index: 9999;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* FOCUS OUTLINE */
+*:focus {
+  outline: 3px solid #ffffff !important;
+  outline-offset: 3px;
+}
+
+.card p,
+.card span,
+.card small {
+  color: #000000 !important;
+}
